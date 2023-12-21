@@ -1,0 +1,14 @@
+    mutating func reduce(_ currentState: ShapeData,
+                         _ action: ShapeModification) -> ShapeData {
+        
+        var newShape = currentState
+        
+        switch action {
+        case .addElement(let element):
+            newShape.elements.append(element)
+        return newState
+        
+    }
+    
+    private mutating func changeSettings(in media: Media?,
+                                         action: VideoSettingsModification) -> Media? {
